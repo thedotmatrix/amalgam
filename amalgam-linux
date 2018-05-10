@@ -1,0 +1,2 @@
+#!/bin/bash
+LD_LIBRARY_PATH=bin/amd64-linux/ java -Dsun.java2d.xrender=false -Djava.library.path=bin/amd64-linux/ -cp 'lib/trove-3.1a1.jar:lib/sat4j.jar:bin:../AmalgamKodkod/bin:lib/com.microsoft.z3.jar:lib/apple-osx-ui.jar' edu.mit.csail.sdg.alloy4whole.SimpleGUI

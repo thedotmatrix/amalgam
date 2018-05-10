@@ -1,0 +1,24 @@
+
+C:\\mingw-w64\\x86_64-7.1.0-win32-seh-rt_v5-rev0\\mingw64\\bin\\g++.exe -O3 -fPIC -ffloat-store -static -static-libstdc++ -static-libgcc -I. -I.. -Iminisatp -I..\\minisatp -DHAVE_JNI_H=1 -D__STDC_LIMIT_MACROS -D__STDC_FORMAT_MACROS -DMINGW ..\\minisatp\\Solver.C -c -oC:\\Users\\Tim\\workspace\\AmalgamKodkod\\jni\\minisatp\\build\\minisatp\\Solver.C.1.o
+
+C:\\mingw-w64\\x86_64-7.1.0-win32-seh-rt_v5-rev0\\mingw64\\bin\\g++.exe -O3 -fPIC -ffloat-store -static -static-libstdc++ -static-libgcc -I. -I.. -Iminisatp -I..\\minisatp -DHAVE_JNI_H=1 -D__STDC_LIMIT_MACROS -D__STDC_FORMAT_MACROS -DMINGW ..\\minisatp\\Proof.C -c -oC:\\Users\\Tim\\workspace\\AmalgamKodkod\\jni\\minisatp\\build\\minisatp\\Proof.C.1.o
+
+C:\\mingw-w64\\x86_64-7.1.0-win32-seh-rt_v5-rev0\\mingw64\\bin\\g++.exe -O3 -fPIC -ffloat-store -static -static-libstdc++ -static-libgcc -I. -I.. -Iminisatp -I..\\minisatp -DHAVE_JNI_H=1 -D__STDC_LIMIT_MACROS -D__STDC_FORMAT_MACROS -DMINGW ..\\minisatp\\File.C -c -oC:\\Users\\Tim\\workspace\\AmalgamKodkod\\jni\\minisatp\\build\\minisatp\\File.C.1.o
+
+C:\\mingw-w64\\x86_64-7.1.0-win32-seh-rt_v5-rev0\\mingw64\\bin\\g++.exe -O3 -fPIC -ffloat-store -static -static-libstdc++ -static-libgcc -I. -I.. -Iminisatp -I..\\minisatp -I"..\\..\\..\\..\\..\\..\\..\\Program Files\\Java\\jdk1.8.0_131\\include" -I"..\\..\\..\\..\\..\\..\\..\\Program Files\\Java\\jdk1.8.0_131\\include\\win32" -DHAVE_JNI_H=1 -D__STDC_LIMIT_MACROS -D__STDC_FORMAT_MACROS -DMINGW ..\\kodkod_engine_satlab_MiniSatProver.cpp -c -oC:\\Users\\Tim\\workspace\\AmalgamKodkod\\jni\\minisatp\\build\\kodkod_engine_satlab_MiniSatProver.cpp.2.o
+
+C:\\mingw-w64\\x86_64-7.1.0-win32-seh-rt_v5-rev0\\mingw64\\bin\\g++.exe -static -static-libgcc -static-libstdc++ -Wl,--out-implib,libminisatprover.dll.a -shared kodkod_engine_satlab_MiniSatProver.cpp.2.o minisatp\\Solver.C.1.o minisatp\\Proof.C.1.o minisatp\\File.C.1.o -oC:\\Users\\Tim\\workspace\\AmalgamKodkod\\jni\\minisatp\\build\\minisatprover.dll -Wl,-Bstatic -L"C:\\Program Files\\Java\\jdk1.8.0_131" -L"C:\\Program Files\\Java\\jdk1.8.0_131\\lib" -ljvm 
+
+---------------------------------------
+
+The -shared produces a shared object. Doesn't say to dynamically link. Without
+it, it's trying to build an executable without a main function and will error.
+
+Removed this, seemingly no effect?
+
+-Wl,--enable-auto-import 
+
+DO NOT INCLUDE THE BELOW COMMAND! It is not -B<dir> as in gcc. It is
+specifically telling *ld* to link dynamic.
+ 
+-Wl,-Bdynamic

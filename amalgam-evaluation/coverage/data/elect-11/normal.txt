@@ -1,0 +1,23 @@
+i = 1, time: 2, prov-accum: 127
+i = 2, time: 3, prov-accum: 176
+
+GC hit?: false
+Model all enumerated: 2
+Model enumeration time: 3
+#Traces: 176
+Model all?: true
+Missing: 0
+#Trace-compacted: 125
+
+== Enumeration ==
+50%, time: 2, id: 1
+70%, time: 2, id: 1
+90%, time: 3, id: 2
+100%, time: 3, id: 2
+
+
+== Ensemble ==
+50%, id: 1
+70%, id: 1
+90%, id: 2
+100%, id: 2

@@ -1,0 +1,50 @@
+i = 1, time: 45, prov-accum: 121
+i = 2, time: 86, prov-accum: 201
+i = 4, time: 159, prov-accum: 269
+i = 6, time: 272, prov-accum: 364
+i = 7, time: 327, prov-accum: 457
+i = 8, time: 375, prov-accum: 542
+i = 9, time: 439, prov-accum: 628
+i = 10, time: 505, prov-accum: 705
+i = 11, time: 565, prov-accum: 790
+i = 13, time: 671, prov-accum: 871
+i = 14, time: 724, prov-accum: 956
+i = 15, time: 783, prov-accum: 957
+i = 17, time: 857, prov-accum: 959
+i = 20, time: 979, prov-accum: 961
+i = 22, time: 1061, prov-accum: 963
+i = 23, time: 1115, prov-accum: 1048
+i = 26, time: 1269, prov-accum: 1131
+i = 27, time: 1326, prov-accum: 1214
+i = 28, time: 1409, prov-accum: 1302
+i = 29, time: 1455, prov-accum: 1391
+i = 30, time: 1494, prov-accum: 1393
+i = 31, time: 1557, prov-accum: 1393
+i = 34, time: 1687, prov-accum: 1480
+i = 35, time: 1749, prov-accum: 1492
+i = 38, time: 1893, prov-accum: 1492
+i = 39, time: 1945, prov-accum: 1492
+i = 40, time: 1986, prov-accum: 1564
+i = 41, time: 2031, prov-accum: 1567
+i = 44, time: 2192, prov-accum: 1650
+
+GC hit?: true
+Model all enumerated: 43
+Model enumeration time: 2195
+#Traces: 1650
+Model all?: false
+Missing: 276
+#Trace-compacted: 1198
+
+== Enumeration ==
+50%, time: 671, id: 13
+70%, time: 1326, id: 27
+90%, time: 1749, id: 35
+100%, time: 2192, id: 44
+
+
+== Ensemble ==
+50%, id: 7
+70%, id: 10
+90%, id: 13
+100%, id: 21

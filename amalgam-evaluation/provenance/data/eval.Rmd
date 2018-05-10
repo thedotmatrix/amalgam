@@ -1,0 +1,54 @@
+---
+title: "Amalgam Evaluation"
+---
+# init
+```{r}
+library(ggplot2)
+library(dplyr)
+library(coin)
+library(pwr)
+library(reshape2)
+options(scipen=5)
+```
+# data
+```{r}
+data <- read.csv("provdata.csv",sep="\t")
+data <- subset(data, pass=="true")
+data <- subset(data, askTime!="null")
+data <- mutate(data, 
+               askMS = as.numeric(as.character(askTime)) / 1000000,
+               askMB = as.numeric(as.character(askMem)) / 1000000,
+               modelMS = as.numeric(as.character(modelTime)) / 1000000,
+               modelMB = as.numeric(as.character(modelMem)) / 1000000)
+```
+# time to generate explains per ask agg over spec (compare to model generation time)
+```{r}
+datam <- melt(data,id.vars=c('spec','testtuple'), measure.vars=c('modelMS','askMS'))
+ggplot(datam) +
+  geom_boxplot(aes(x=spec, y=as.numeric(value), color=variable)) +
+  coord_trans(y="log10")
+tapply(data$modelMS, data$spec, function(x) (summary(x)))
+tapply(data$askMS, data$spec, function(x) (summary(x)))
+```
+# memory to generate explains per ask agg over spec (compare to model generation memory)
+```{r}
+datam <- melt(data,id.vars=c('spec','testtuple'), measure.vars=c('modelMB','askMB'))
+ggplot(datam) +
+  geom_boxplot(aes(x=spec, y=as.numeric(value), color=variable)) +
+  coord_trans(y="log10")
+tapply(data$modelMB, data$spec, function(x) (summary(x)))
+tapply(data$askMB, data$spec, function(x) (summary(x)))
+```
+# all spec intuitive metrics
+```{r}
+tapply(data$numProvs, data$spec, function(x) (summary(x)))
+```
+```{r}
+tapply(data$maxTreeDepth, data$spec, function(x) (summary(x)))
+```
+```{r}
+tapply(data$maxNumAlphas, data$spec, function(x) (summary(x)))
+```
+```{r}
+tapply(data$maxHighlight, data$spec, function(x) (summary(x)))
+```

@@ -1,0 +1,5 @@
+testing/PAPER/hl3.als
+Check NoBadEntry for 5 but 3 Room, 3 Guest, 5 Time, 4 Event
+
+hl3 & \at{NoBadEntry} & 5 & 384 / 326 [0] & \cm & 7 [1] & 7 [1] & 29 [5] & 769 [141] & 1 & 1 & 2 & 10 & 166 & 917 \\
+& & & 375 / 326 [0] & \cm & 5 [1] & 5 [1] & 42 [9] & 740 [138] & 1 & 1 & 2 & 10 & 166 & 912 \\

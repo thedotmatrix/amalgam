@@ -1,0 +1,36 @@
+i = 1, time: 0, prov-accum: 16
+i = 10, time: 0, prov-accum: 16
+i = 12, time: 0, prov-accum: 16
+i = 29, time: 1, prov-accum: 16
+i = 33, time: 1, prov-accum: 18
+i = 35, time: 1, prov-accum: 20
+i = 49, time: 1, prov-accum: 20
+i = 52, time: 1, prov-accum: 20
+i = 54, time: 1, prov-accum: 22
+i = 61, time: 1, prov-accum: 22
+i = 99, time: 2, prov-accum: 22
+i = 106, time: 2, prov-accum: 22
+i = 135, time: 2, prov-accum: 22
+i = 275, time: 4, prov-accum: 22
+i = 280, time: 4, prov-accum: 22
+
+GC hit?: true
+Model all enumerated: 74874
+Model enumeration time: 3600
+#Traces: 22
+Model all?: false
+Missing: 0
+#Trace-compacted: 18
+
+== Enumeration ==
+50%, time: 0, id: 1
+70%, time: 0, id: 1
+90%, time: 1, id: 35
+100%, time: 1, id: 54
+
+
+== Ensemble ==
+50%, id: 1
+70%, id: 1
+90%, id: 2
+100%, id: 3

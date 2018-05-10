@@ -1,0 +1,74 @@
+i = 1, time: 5, prov-accum: 311
+i = 2, time: 11, prov-accum: 314
+i = 3, time: 16, prov-accum: 327
+i = 4, time: 20, prov-accum: 332
+i = 7, time: 34, prov-accum: 334
+i = 9, time: 42, prov-accum: 337
+i = 11, time: 50, prov-accum: 337
+i = 13, time: 59, prov-accum: 338
+i = 15, time: 67, prov-accum: 339
+i = 19, time: 85, prov-accum: 340
+i = 21, time: 94, prov-accum: 340
+i = 29, time: 136, prov-accum: 342
+i = 31, time: 147, prov-accum: 342
+i = 39, time: 190, prov-accum: 346
+i = 40, time: 195, prov-accum: 346
+i = 41, time: 200, prov-accum: 354
+i = 45, time: 219, prov-accum: 354
+i = 51, time: 248, prov-accum: 356
+i = 53, time: 260, prov-accum: 356
+i = 55, time: 270, prov-accum: 356
+i = 62, time: 310, prov-accum: 358
+i = 63, time: 316, prov-accum: 361
+i = 66, time: 335, prov-accum: 364
+i = 67, time: 341, prov-accum: 365
+i = 68, time: 347, prov-accum: 365
+i = 72, time: 372, prov-accum: 367
+i = 76, time: 397, prov-accum: 369
+i = 77, time: 403, prov-accum: 369
+i = 78, time: 407, prov-accum: 372
+i = 80, time: 416, prov-accum: 372
+i = 81, time: 420, prov-accum: 372
+i = 84, time: 434, prov-accum: 372
+i = 85, time: 441, prov-accum: 372
+i = 90, time: 466, prov-accum: 372
+i = 92, time: 475, prov-accum: 372
+i = 99, time: 511, prov-accum: 372
+i = 102, time: 530, prov-accum: 372
+i = 105, time: 547, prov-accum: 373
+i = 107, time: 559, prov-accum: 373
+i = 111, time: 582, prov-accum: 373
+i = 113, time: 594, prov-accum: 373
+i = 115, time: 606, prov-accum: 373
+i = 117, time: 617, prov-accum: 373
+i = 131, time: 698, prov-accum: 373
+i = 133, time: 710, prov-accum: 373
+i = 138, time: 740, prov-accum: 375
+i = 144, time: 777, prov-accum: 375
+i = 148, time: 802, prov-accum: 375
+i = 150, time: 815, prov-accum: 375
+i = 154, time: 840, prov-accum: 375
+i = 158, time: 863, prov-accum: 375
+i = 163, time: 893, prov-accum: 375
+i = 165, time: 906, prov-accum: 375
+
+GC hit?: false
+Model all enumerated: 166
+Model enumeration time: 912
+#Traces: 375
+Model all?: true
+Missing: 0
+#Trace-compacted: 326
+
+== Enumeration ==
+50%, time: 5, id: 1
+70%, time: 5, id: 1
+90%, time: 42, id: 9
+100%, time: 740, id: 138
+
+
+== Ensemble ==
+50%, id: 1
+70%, id: 1
+90%, id: 2
+100%, id: 10

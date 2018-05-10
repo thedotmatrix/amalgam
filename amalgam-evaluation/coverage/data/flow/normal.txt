@@ -1,0 +1,126 @@
+i = 1, time: 5, prov-accum: 153
+i = 2, time: 11, prov-accum: 289
+i = 3, time: 15, prov-accum: 294
+i = 4, time: 19, prov-accum: 301
+i = 5, time: 22, prov-accum: 303
+i = 7, time: 30, prov-accum: 313
+i = 8, time: 42, prov-accum: 367
+i = 9, time: 47, prov-accum: 394
+i = 10, time: 57, prov-accum: 420
+i = 11, time: 62, prov-accum: 420
+i = 12, time: 72, prov-accum: 422
+i = 13, time: 82, prov-accum: 422
+i = 14, time: 92, prov-accum: 422
+i = 16, time: 112, prov-accum: 424
+i = 17, time: 122, prov-accum: 426
+i = 18, time: 133, prov-accum: 428
+i = 23, time: 178, prov-accum: 434
+i = 26, time: 208, prov-accum: 434
+i = 28, time: 223, prov-accum: 435
+i = 30, time: 232, prov-accum: 435
+i = 33, time: 256, prov-accum: 441
+i = 44, time: 319, prov-accum: 573
+i = 64, time: 475, prov-accum: 573
+i = 67, time: 496, prov-accum: 704
+i = 69, time: 506, prov-accum: 711
+i = 70, time: 512, prov-accum: 730
+i = 82, time: 618, prov-accum: 730
+i = 88, time: 670, prov-accum: 733
+i = 89, time: 676, prov-accum: 736
+i = 90, time: 686, prov-accum: 748
+i = 101, time: 761, prov-accum: 748
+i = 103, time: 770, prov-accum: 844
+i = 109, time: 803, prov-accum: 844
+i = 120, time: 881, prov-accum: 844
+i = 137, time: 994, prov-accum: 844
+i = 139, time: 1009, prov-accum: 844
+i = 144, time: 1043, prov-accum: 844
+i = 145, time: 1048, prov-accum: 844
+i = 148, time: 1061, prov-accum: 844
+i = 149, time: 1066, prov-accum: 844
+i = 154, time: 1096, prov-accum: 849
+i = 155, time: 1101, prov-accum: 853
+i = 166, time: 1195, prov-accum: 854
+i = 171, time: 1231, prov-accum: 859
+i = 176, time: 1292, prov-accum: 859
+i = 183, time: 1379, prov-accum: 861
+i = 186, time: 1416, prov-accum: 863
+i = 194, time: 1514, prov-accum: 863
+i = 195, time: 1527, prov-accum: 865
+i = 197, time: 1551, prov-accum: 865
+i = 198, time: 1564, prov-accum: 865
+i = 201, time: 1601, prov-accum: 867
+i = 202, time: 1612, prov-accum: 910
+i = 208, time: 1682, prov-accum: 910
+i = 211, time: 1707, prov-accum: 1036
+i = 214, time: 1738, prov-accum: 1041
+i = 215, time: 1747, prov-accum: 1043
+i = 216, time: 1756, prov-accum: 1045
+i = 217, time: 1766, prov-accum: 1045
+i = 219, time: 1786, prov-accum: 1047
+i = 223, time: 1808, prov-accum: 1047
+i = 241, time: 1937, prov-accum: 1048
+i = 275, time: 2166, prov-accum: 1049
+i = 287, time: 2245, prov-accum: 1049
+i = 288, time: 2257, prov-accum: 1049
+i = 290, time: 2268, prov-accum: 1049
+i = 291, time: 2273, prov-accum: 1049
+i = 292, time: 2278, prov-accum: 1049
+i = 293, time: 2291, prov-accum: 1049
+i = 301, time: 2345, prov-accum: 1049
+i = 303, time: 2363, prov-accum: 1049
+i = 310, time: 2409, prov-accum: 1056
+i = 315, time: 2437, prov-accum: 1154
+i = 317, time: 2455, prov-accum: 1154
+i = 319, time: 2472, prov-accum: 1156
+i = 327, time: 2529, prov-accum: 1156
+i = 331, time: 2564, prov-accum: 1159
+i = 337, time: 2617, prov-accum: 1159
+i = 339, time: 2628, prov-accum: 1159
+i = 342, time: 2646, prov-accum: 1162
+i = 344, time: 2663, prov-accum: 1162
+i = 346, time: 2681, prov-accum: 1162
+i = 348, time: 2699, prov-accum: 1164
+i = 350, time: 2709, prov-accum: 1164
+i = 351, time: 2717, prov-accum: 1167
+i = 356, time: 2750, prov-accum: 1167
+i = 361, time: 2784, prov-accum: 1167
+i = 363, time: 2809, prov-accum: 1167
+i = 369, time: 2839, prov-accum: 1167
+i = 375, time: 2870, prov-accum: 1167
+i = 376, time: 2882, prov-accum: 1169
+i = 381, time: 2919, prov-accum: 1172
+i = 382, time: 2931, prov-accum: 1172
+i = 388, time: 2980, prov-accum: 1175
+i = 397, time: 3034, prov-accum: 1175
+i = 398, time: 3046, prov-accum: 1175
+i = 403, time: 3076, prov-accum: 1305
+i = 406, time: 3107, prov-accum: 1305
+i = 407, time: 3116, prov-accum: 1305
+i = 410, time: 3142, prov-accum: 1307
+i = 412, time: 3159, prov-accum: 1307
+i = 414, time: 3183, prov-accum: 1310
+i = 417, time: 3199, prov-accum: 1310
+i = 420, time: 3219, prov-accum: 1310
+i = 445, time: 3456, prov-accum: 1310
+
+GC hit?: false
+Model all enumerated: 460
+Model enumeration time: 3600
+#Traces: 1310
+Model all?: false
+Missing: 6
+#Trace-compacted: 760
+
+== Enumeration ==
+50%, time: 496, id: 67
+70%, time: 1707, id: 211
+90%, time: 3076, id: 403
+100%, time: 3183, id: 414
+
+
+== Ensemble ==
+50%, id: 3
+70%, id: 5
+90%, id: 7
+100%, id: 26

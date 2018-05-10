@@ -1,0 +1,62 @@
+i = 1, time: 0, prov-accum: 40
+i = 2, time: 2, prov-accum: 98
+i = 3, time: 3, prov-accum: 99
+i = 8, time: 6, prov-accum: 100
+i = 9, time: 7, prov-accum: 101
+i = 10, time: 8, prov-accum: 101
+i = 26, time: 28, prov-accum: 106
+i = 27, time: 30, prov-accum: 106
+i = 28, time: 32, prov-accum: 106
+i = 29, time: 32, prov-accum: 106
+i = 35, time: 36, prov-accum: 106
+i = 43, time: 41, prov-accum: 108
+i = 45, time: 44, prov-accum: 108
+i = 51, time: 57, prov-accum: 108
+i = 52, time: 59, prov-accum: 108
+i = 53, time: 61, prov-accum: 108
+i = 64, time: 84, prov-accum: 108
+i = 65, time: 87, prov-accum: 108
+i = 86, time: 116, prov-accum: 109
+i = 87, time: 118, prov-accum: 109
+i = 98, time: 142, prov-accum: 109
+i = 100, time: 146, prov-accum: 109
+i = 101, time: 149, prov-accum: 109
+i = 106, time: 160, prov-accum: 109
+i = 112, time: 168, prov-accum: 109
+i = 135, time: 196, prov-accum: 109
+i = 136, time: 197, prov-accum: 109
+i = 141, time: 200, prov-accum: 109
+i = 142, time: 202, prov-accum: 109
+i = 178, time: 249, prov-accum: 109
+i = 185, time: 258, prov-accum: 109
+i = 190, time: 265, prov-accum: 109
+i = 220, time: 303, prov-accum: 109
+i = 226, time: 312, prov-accum: 109
+i = 227, time: 313, prov-accum: 109
+i = 228, time: 315, prov-accum: 109
+i = 239, time: 330, prov-accum: 109
+i = 240, time: 332, prov-accum: 109
+i = 324, time: 508, prov-accum: 109
+i = 325, time: 511, prov-accum: 109
+i = 328, time: 520, prov-accum: 109
+
+GC hit?: false
+Model all enumerated: 385
+Model enumeration time: 695
+#Traces: 109
+Model all?: true
+Missing: 0
+#Trace-compacted: 108
+
+== Enumeration ==
+50%, time: 2, id: 2
+70%, time: 2, id: 2
+90%, time: 2, id: 2
+100%, time: 116, id: 86
+
+
+== Ensemble ==
+50%, id: 1
+70%, id: 1
+90%, id: 2
+100%, id: 4

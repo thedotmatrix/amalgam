@@ -1,0 +1,115 @@
+i = 1, time: 2, prov-accum: 107
+i = 2, time: 4, prov-accum: 139
+i = 3, time: 7, prov-accum: 171
+i = 5, time: 11, prov-accum: 185
+i = 6, time: 13, prov-accum: 204
+i = 7, time: 15, prov-accum: 221
+i = 8, time: 17, prov-accum: 244
+i = 9, time: 20, prov-accum: 270
+i = 10, time: 23, prov-accum: 279
+i = 11, time: 25, prov-accum: 282
+i = 12, time: 28, prov-accum: 286
+i = 14, time: 33, prov-accum: 286
+i = 21, time: 49, prov-accum: 294
+i = 44, time: 99, prov-accum: 294
+i = 84, time: 183, prov-accum: 294
+i = 86, time: 187, prov-accum: 309
+i = 91, time: 199, prov-accum: 309
+i = 92, time: 201, prov-accum: 309
+i = 99, time: 214, prov-accum: 314
+i = 100, time: 217, prov-accum: 314
+i = 189, time: 362, prov-accum: 316
+i = 218, time: 423, prov-accum: 316
+i = 219, time: 426, prov-accum: 316
+i = 220, time: 429, prov-accum: 316
+i = 221, time: 431, prov-accum: 331
+i = 225, time: 442, prov-accum: 347
+i = 277, time: 554, prov-accum: 347
+i = 278, time: 557, prov-accum: 347
+i = 313, time: 636, prov-accum: 347
+i = 316, time: 643, prov-accum: 347
+i = 319, time: 650, prov-accum: 347
+i = 328, time: 669, prov-accum: 347
+i = 348, time: 715, prov-accum: 347
+i = 498, time: 1021, prov-accum: 347
+i = 500, time: 1026, prov-accum: 347
+i = 531, time: 1107, prov-accum: 348
+i = 541, time: 1132, prov-accum: 349
+i = 542, time: 1135, prov-accum: 350
+i = 585, time: 1236, prov-accum: 352
+i = 609, time: 1290, prov-accum: 352
+i = 610, time: 1293, prov-accum: 352
+i = 613, time: 1302, prov-accum: 352
+i = 614, time: 1305, prov-accum: 352
+i = 619, time: 1319, prov-accum: 353
+i = 764, time: 1621, prov-accum: 353
+i = 775, time: 1648, prov-accum: 353
+i = 782, time: 1667, prov-accum: 353
+i = 826, time: 1768, prov-accum: 353
+i = 875, time: 1889, prov-accum: 353
+i = 888, time: 1925, prov-accum: 353
+i = 935, time: 2047, prov-accum: 353
+i = 938, time: 2056, prov-accum: 353
+i = 941, time: 2064, prov-accum: 353
+i = 943, time: 2070, prov-accum: 353
+i = 967, time: 2136, prov-accum: 353
+i = 977, time: 2162, prov-accum: 353
+i = 997, time: 2211, prov-accum: 353
+i = 998, time: 2214, prov-accum: 353
+i = 1013, time: 2252, prov-accum: 353
+i = 1043, time: 2325, prov-accum: 353
+i = 1089, time: 2445, prov-accum: 353
+i = 1119, time: 2517, prov-accum: 353
+i = 1122, time: 2526, prov-accum: 353
+i = 1132, time: 2553, prov-accum: 353
+i = 1153, time: 2607, prov-accum: 353
+i = 1242, time: 2822, prov-accum: 353
+i = 1261, time: 2873, prov-accum: 353
+i = 1273, time: 2905, prov-accum: 353
+i = 1283, time: 2930, prov-accum: 353
+i = 1284, time: 2933, prov-accum: 353
+i = 1297, time: 2968, prov-accum: 353
+i = 1324, time: 3028, prov-accum: 353
+i = 1328, time: 3039, prov-accum: 353
+i = 1335, time: 3058, prov-accum: 353
+i = 1337, time: 3063, prov-accum: 353
+i = 1338, time: 3066, prov-accum: 353
+i = 1351, time: 3098, prov-accum: 353
+i = 1352, time: 3100, prov-accum: 353
+i = 1360, time: 3120, prov-accum: 353
+i = 1361, time: 3122, prov-accum: 353
+i = 1446, time: 3319, prov-accum: 353
+i = 1469, time: 3379, prov-accum: 353
+i = 1472, time: 3388, prov-accum: 353
+i = 1473, time: 3391, prov-accum: 353
+i = 1487, time: 3428, prov-accum: 353
+i = 1490, time: 3436, prov-accum: 353
+i = 1491, time: 3439, prov-accum: 353
+i = 1502, time: 3466, prov-accum: 353
+i = 1516, time: 3504, prov-accum: 353
+i = 1517, time: 3507, prov-accum: 353
+i = 1528, time: 3534, prov-accum: 353
+i = 1542, time: 3572, prov-accum: 353
+i = 1543, time: 3574, prov-accum: 353
+i = 1554, time: 3602, prov-accum: 353
+
+GC hit?: false
+Model all enumerated: 1554
+Model enumeration time: 3602
+#Traces: 353
+Model all?: false
+Missing: 0
+#Trace-compacted: 196
+
+== Enumeration ==
+50%, time: 11, id: 5
+70%, time: 20, id: 9
+90%, time: 431, id: 221
+100%, time: 1319, id: 619
+
+
+== Ensemble ==
+50%, id: 1
+70%, id: 3
+90%, id: 6
+100%, id: 11

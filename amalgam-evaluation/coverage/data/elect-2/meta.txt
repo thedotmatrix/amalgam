@@ -1,0 +1,5 @@
+testing/PAPER/elect-2.als
+Run looplessPath for 3 Process, 12 Time
+
+elect-2 & \at{looplessPath} & 12 & 246 / 190 [0] & \cm & 11 [1] & 11 [1] & 11 [1] & 36 [3] & 1 & 1 & 2 & 3 & 3 & 36 \\
+& & & 249 / 190 [0] & \cm & 10 [1] & 10 [1] & 20 [2] & 29 [3] & 1 & 1 & 2 & 3 & 3 & 29 \\

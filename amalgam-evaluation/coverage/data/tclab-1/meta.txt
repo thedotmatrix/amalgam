@@ -1,0 +1,5 @@
+testing/PAPER/tclab.als
+Run ConnectedKittyBacon
+
+tclab & \at{connectedKitty} & 3 & 41 / 41 [0] & \cm & 0 [1] & 0 [2] & 0 [6] & 1 [17] & 1 & 2 & 4 & 6 & 55 & 2 \\
+& & & 44 / 41 [0] & \cm & 0 [1] & 0 [3] & 0 [7] & 1 [45] & 1 & 2 & 4 & 6 & 55 & 1 \\

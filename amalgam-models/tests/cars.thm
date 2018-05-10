@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Address"/>
+   <type name="Car"/>
+   <type name="color"/>
+   <type name="drivenBy"/>
+   <type name="Driver"/>
+   <type name="drives"/>
+   <type name="Employee"/>
+   <type name="enum_ColorKind_black"/>
+   <type name="enum_ColorKind_red"/>
+   <type name="enum_ColorKind_white"/>
+   <type name="EnumVal"/>
+   <type name="FName"/>
+   <type name="Int"/>
+   <type name="Manager"/>
+   <type name="Obj"/>
+   <type name="of"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="Val"/>
+   <type name="worksIn"/>
+   <type name="seq/Int"/>
+   <set name="$AddressSubsCDCD2Alloy1" type="Obj"/>
+   <set name="$AddressSubsCDCD2Alloy2" type="Obj"/>
+   <set name="$CarSubsCDCD2Alloy1" type="Obj"/>
+   <set name="$ColorKindEnumCDCD2Alloy1" type="EnumVal"/>
+   <set name="$DriverSubsCDCD2Alloy1" type="Obj"/>
+   <set name="$DriverSubsCDCD2Alloy2" type="Obj"/>
+   <set name="$EmployeeSubsCDCD2Alloy1" type="Obj"/>
+   <set name="$EmployeeSubsCDCD2Alloy2" type="Obj"/>
+</node>
+
+<edge attribute="yes">
+   <relation name="get"> <type name="Obj"/> <type name="FName"/> <type name="EnumVal"/> </relation>
+</edge>
+
+</view>
+
+</alloy>

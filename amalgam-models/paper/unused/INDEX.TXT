@@ -1,0 +1,26 @@
+digraph.als:		a directed graph (no additional constraints)
+dirtreecorrect:		correct implementation of directed trees
+dtreebug:			buggy implementation of directed trees; injectivity uses ~edges.edges (wrongly) instead of edges.~edges
+coloredtrees:		spec from section 2
+coloredtreesbug:	spec from section 2 with areflexivity commented out
+gwh:				non-homeomorphically irreducible trees
+abc:				logic puzzle (alice, bob, charlie | brown, not-brown)
+addr:               address book specification (? which one?)
+bempl:				toy lab security policy spec
+other:				another toy lab security policy spec (? why have both?)
+CD2Alloy1:			UML diagram 1 (via CDDiff compiler)
+CD2Alloy2:			UML diagram 2 (via CDDiff compiler)
+diff1:				UML diagram difference (1 vs 2)
+diff2:				UML diagram difference (2 vs 1)
+flow:				2013 Flowlog NIB spec translation, with bug
+gene:				Alloy book geneology
+grade:				Gradebook
+grand:				Alloy book grandpa
+resfm:				Emina's resolution model for FM08
+
+not in paper yet because of last minute problems...
+webAuth just needs to be run
+tclab:				First lab from tim's class. Kitty Bacon lab defining transitive closure as predicate =/= trans closure operator
+gclab:				Second lab from tim's class. Garbage collection not complete because refcounting needs to detect cycles.
+chordfix:			Zave's corrected Chord protocol (? why not use buggy one?)
+chordbug:			Buggy Chord Protocol

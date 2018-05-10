@@ -1,0 +1,72 @@
+i = 1, time: 7, prov-accum: 313
+i = 2, time: 12, prov-accum: 327
+i = 3, time: 18, prov-accum: 338
+i = 4, time: 23, prov-accum: 342
+i = 5, time: 29, prov-accum: 352
+i = 6, time: 33, prov-accum: 354
+i = 8, time: 46, prov-accum: 357
+i = 9, time: 52, prov-accum: 361
+i = 10, time: 57, prov-accum: 361
+i = 15, time: 86, prov-accum: 361
+i = 16, time: 92, prov-accum: 364
+i = 19, time: 111, prov-accum: 365
+i = 20, time: 118, prov-accum: 369
+i = 27, time: 160, prov-accum: 371
+i = 28, time: 165, prov-accum: 372
+i = 29, time: 170, prov-accum: 372
+i = 30, time: 175, prov-accum: 372
+i = 36, time: 206, prov-accum: 372
+i = 39, time: 221, prov-accum: 372
+i = 40, time: 227, prov-accum: 374
+i = 43, time: 244, prov-accum: 374
+i = 51, time: 284, prov-accum: 374
+i = 53, time: 296, prov-accum: 374
+i = 54, time: 301, prov-accum: 374
+i = 56, time: 313, prov-accum: 376
+i = 63, time: 351, prov-accum: 377
+i = 64, time: 358, prov-accum: 378
+i = 65, time: 363, prov-accum: 378
+i = 66, time: 369, prov-accum: 379
+i = 67, time: 373, prov-accum: 379
+i = 69, time: 384, prov-accum: 379
+i = 71, time: 394, prov-accum: 381
+i = 72, time: 400, prov-accum: 381
+i = 75, time: 414, prov-accum: 383
+i = 76, time: 420, prov-accum: 383
+i = 79, time: 436, prov-accum: 383
+i = 84, time: 460, prov-accum: 383
+i = 86, time: 471, prov-accum: 383
+i = 91, time: 497, prov-accum: 383
+i = 97, time: 525, prov-accum: 383
+i = 105, time: 566, prov-accum: 383
+i = 106, time: 570, prov-accum: 383
+i = 118, time: 642, prov-accum: 383
+i = 119, time: 647, prov-accum: 383
+i = 131, time: 709, prov-accum: 383
+i = 141, time: 769, prov-accum: 384
+i = 145, time: 791, prov-accum: 384
+i = 149, time: 814, prov-accum: 384
+i = 151, time: 826, prov-accum: 384
+i = 158, time: 867, prov-accum: 384
+i = 164, time: 902, prov-accum: 384
+
+GC hit?: false
+Model all enumerated: 166
+Model enumeration time: 917
+#Traces: 384
+Model all?: true
+Missing: 0
+#Trace-compacted: 326
+
+== Enumeration ==
+50%, time: 7, id: 1
+70%, time: 7, id: 1
+90%, time: 29, id: 5
+100%, time: 769, id: 141
+
+
+== Ensemble ==
+50%, id: 1
+70%, id: 1
+90%, id: 2
+100%, id: 10

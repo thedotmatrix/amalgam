@@ -1,0 +1,9 @@
+Make sure to use python scripts/mk_make.py -x --java
+(-x for 64 bit, --java to build the 2nd DLL)
+
+Make sure to include both DLLs!
+
+Note that, to build 64-bit DLL, you need to be in Visual Studio's 64-bit command line (grep on "x64 native").
+
+To find dependencies, may need to add the DLL directory to the user's PATH as well as Java Classpath. See:
+https://github.com/Z3Prover/z3/issues/1064

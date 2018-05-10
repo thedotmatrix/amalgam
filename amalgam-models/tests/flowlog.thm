@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view useOriginalAtomNames="yes">
+
+<defaultnode/>
+
+<defaultedge color="Black"/>
+
+<node>
+   <type name="C_tnib"/>
+   <type name="Ethtyp"/>
+   <type name="EVdummy_down_alert"/>
+   <type name="Event"/>
+   <type name="EVpacket"/>
+   <type name="EVstart_timer"/>
+   <type name="EVstartup"/>
+   <type name="EVswitch_down"/>
+   <type name="EVswitch_port"/>
+   <type name="EVtimer_expired"/>
+   <type name="FLInt"/>
+   <type name="FLString"/>
+   <type name="Int"/>
+   <type name="Ipaddr"/>
+   <type name="Macaddr"/>
+   <type name="Nwprotocol"/>
+   <type name="Portid"/>
+   <type name="State"/>
+   <type name="String"/>
+   <type name="Switchid"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+   <set name="$isTCReallyTC_ev" type="EVpacket"/>
+   <set name="$isTCReallyTC_st" type="State"/>
+   <set name="$isTCReallyTC_st2" type="State"/>
+</node>
+
+<node visible="no">
+   <type name="C_0x1001"/>
+</node>
+
+<edge visible="no">  
+   <relation name="nonswitchports"> <type name="Switchid"/> <type name="Portid"/> </relation>  
+   <relation name="spanningtree"> <type name="Switchid"/> <type name="Portid"/> </relation>
+   <relation name="ucst"> <type name="State"/> <type name="Switchid"/> <type name="Portid"/> <type name="Switchid"/> <type name="Portid"/> </relation>
+</edge>
+
+<edge visible="no" attribute="yes">
+   <relation name="dldst"> <type name="EVpacket"/> <type name="Macaddr"/> </relation>
+   <relation name="dldst"> <type name="EVpacket"/> <type name="Portid"/> </relation>
+   <relation name="dlsrc"> <type name="EVpacket"/> <type name="Macaddr"/> </relation>
+   <relation name="dlsrc"> <type name="EVpacket"/> <type name="Switchid"/> </relation>
+   <relation name="dltyp"> <type name="EVpacket"/> <type name="Ethtyp"/> </relation>
+   <relation name="locpt"> <type name="EVpacket"/> <type name="Portid"/> </relation>
+   <relation name="locsw"> <type name="EVpacket"/> <type name="Switchid"/> </relation>
+   <relation name="nwdst"> <type name="EVpacket"/> <type name="Ipaddr"/> </relation>
+   <relation name="nwproto"> <type name="EVpacket"/> <type name="Nwprotocol"/> </relation>
+   <relation name="nwsrc"> <type name="EVpacket"/> <type name="Ipaddr"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
