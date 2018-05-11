@@ -1,4 +1,0 @@
-#!/bin/bash
-cname="$1"
-shift
-java -d64 -Xms512m -Xmx3g -Djava.library.path="extra/amd64-windows" -cp 'lib/trove-3.1a1.jar;lib/sat4j.jar;bin;../AmalgamKodkod/bin;lib/com.microsoft.z3.jar' edu.mit.csail.sdg.alloy4whole.$cname "$@"

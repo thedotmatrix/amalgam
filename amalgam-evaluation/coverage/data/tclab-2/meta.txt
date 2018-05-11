@@ -1,5 +1,0 @@
-testing/PAPER/tclab.als
-Check ConnectedKittyBacon_equals_SuperConnected for exactly 5 Cat, 1 CoolCatClub
-
-tclab & \at{connectedIffSuper} & e5 & 31 / 30 [0] & \cm & 0 [1] & 0 [1] & 0 [1] & 0 [1] & 1 & 1 & 1 & 1 & 1 & 0 \\
-& & & 33 / 30 [0] & \cm & 0 [1] & 0 [1] & 0 [1] & 0 [1] & 1 & 1 & 1 & 1 & 1 & 0 \\

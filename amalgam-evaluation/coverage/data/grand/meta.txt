@@ -1,5 +1,0 @@
-testing/PAPER/grand.als
-Run ownGrandpa for 4 Person expect 1
-
-grand & \at{ownGrandpa} & 4 & 55 / 51 [0] & \cm & 0 [1] & 0 [1] & 1 [4] & 1 [4] & 1 & 1 & 2 & 2 & 36 & 5 \\
-& & & 57 / 51 [0] & \cm & 0 [1] & 0 [1] & 0 [4] & 0 [4] & 1 & 1 & 2 & 2 & 36 & 4 \\

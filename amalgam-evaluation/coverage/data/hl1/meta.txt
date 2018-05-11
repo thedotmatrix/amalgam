@@ -1,5 +1,0 @@
-testing/PAPER/hl1.als
-Check NoBadEntry for 3 but 2 Room, 2 Guest, 5 Time
-
-hl1 & \at{NoBadEntry} & 3 & 207 / 191 [0] & \cm & 96 [1] & 96 [1] & 96 [1] & 96 [1] & 1 & 1 & 1 & 1 & 1 & 96 \\
-& & & 204 / 191 [0] & \cm & 95 [1] & 95 [1] & 95 [1] & 95 [1] & 1 & 1 & 1 & 1 & 1 & 95 \\

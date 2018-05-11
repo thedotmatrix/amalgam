@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if ls waf-1.8.12 1> /dev/null 2>&1; then
+    echo "waf builder already downloaded"
+else
+    echo "downloading waf builder"
+    wget --no-check-certificate https://waf.io/waf-1.8.12
+fi
+chmod u+x waf-1.8.12
+./waf-1.8.12 configure --prefix=. --libdir=lib build install

@@ -1,5 +1,0 @@
-testing/PAPER/flow.als
-Check isTCReallyTC for 0 but 1 Event, 2 State, 4 Switchid, 2 Portid, 2 Ipaddr, 1 Ethtyp, 1 Nwprotocol
-
-flow & \at{isTCReallyTC} & 4 & 1310 / 760 [6] & \xm & 496 [67] & 1707 [211] & 3076 [403] & 3183 [414] & 3 & 5 & 7 & 26 & 460 & 3600 \\
-& & & 478 / 348 [578] & \xm & 9 [2] & 25 [4] & 85 [12] & 1447 [144] & 1 & 2 & 3 & 10 & 352 & 3610 \\

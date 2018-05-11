@@ -22,25 +22,25 @@ def build(bld):
 
     bld(features  = 'javac jar',
         name      = 'kodkod',
-        srcdir    = 'kodkod', 
+        srcdir    = 'kodkod',
         outdir    = 'kodkod',
         compat    = '1.8',
         classpath = ['.', 'org.sat4j.core.jar'],
-        manifest  = 'src/MANIFEST',
+        manifest  = 'kodkod/MANIFEST',
         basedir   = 'kodkod',
         destfile  = 'kodkod.jar')
-    
+
  #   bld(features  = 'javac jar',
  #       name      = 'examples',
  #       use       = 'kodkod',
- #       srcdir    = 'examples', 
+ #       srcdir    = 'examples',
  #       outdir    = 'examples',
  #       compat    = '1.8',
  #       classpath = ['.', 'kodkod.jar'],
  #       manifest  = 'examples/MANIFEST',
  #       basedir   = 'examples',
  #       destfile  = 'examples.jar')
-    
+
     bld.install_files('${LIBDIR}', ['kodkod.jar'])
 
 def distclean(ctx):
@@ -48,12 +48,11 @@ def distclean(ctx):
     Scripting.distclean(ctx)
     ctx.recurse('jni')
 
-
 from waflib.Build import BuildContext
 class TestContext(BuildContext):
         cmd = 'test'
         fun = 'test'
-                
+
 def test(bld):
     """compiles and runs tests"""
 
@@ -67,7 +66,7 @@ def test(bld):
     bld(features  = 'javac',
         name      = 'test',
         srcdir    = 'test',
-        classpath = cp, 
+        classpath = cp,
         use       = ['kodkod', 'examples'])
     bld.add_group()
 
@@ -75,7 +74,5 @@ def test(bld):
                                                                                           libpath = bld.env.LIBDIR,
                                                                                           junit = 'org.junit.runner.JUnitCore',
                                                                                           test = 'kodkod.test.AllTests'),
-        always = True) 
+        always = True)
 
-
-        

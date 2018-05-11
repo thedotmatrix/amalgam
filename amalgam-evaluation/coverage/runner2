@@ -1,4 +1,0 @@
-#!/bin/bash
-cname="$1"
-shift
-LD_LIBRARY_PATH=../../git/z3/build/ /research/java/linux/jdk1.8.0_141-x64/bin/java -d64 -Xms512m -Xmx3g -Djava.library.path=bin/amd64-linux/:bin/x86-mac/:../../git/z3/build/ -cp 'lib/trove-3.1a1.jar:lib/sat4j.jar:bin:../AmalgamKodkod/bin:../../git/z3/build/com.microsoft.z3.jar' edu.mit.csail.sdg.alloy4whole.$cname "$@"

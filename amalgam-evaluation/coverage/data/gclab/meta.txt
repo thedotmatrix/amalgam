@@ -1,5 +1,0 @@
-testing/PAPER/gclab.als
-Check completeness for 4 int, 6 Memory
-
-gclab & \at{completeness} & 6 & 71 / 43 [0] & \xm & 0 [1] & 1 [6] & 11 [101] & 56 [433] & 1 & 1 & 1 & 1 & 20071 & 3600 \\
-& & & 63 / 43 [0] & \xm & 0 [1] & 0 [2] & 164 [1080] & 342 [2092] & 1 & 1 & 1 & 2 & 21511 & 3600 \\

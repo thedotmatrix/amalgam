@@ -26,6 +26,7 @@ build
 bin
 lib/*
 .*waf*
+jni/*
 
 # amalgam output
 bin
