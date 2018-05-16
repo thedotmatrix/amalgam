@@ -1,1 +1,1 @@
-java -cp dist/alloy4.2_2018-05-11.jar edu.mit.csail.sdg.alloy4whole.SimpleGUI
+java -cp dist/amalgam.jar edu.mit.csail.sdg.alloy4whole.SimpleGUI

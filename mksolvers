@@ -1,10 +1,41 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
+# OS specific commands
+if [ "$(uname)" == "Darwin" ]; then
+    echo "Running Mac OSX install (requires homebrew and wget)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew install wget --with-libressl
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    echo "Running Linux install"
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    echo "Build scripts not tested on 32-bit Windows, but should work with cygwin."
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
+    echo "Build scripts not tested on 64-bit Windows, but should work with cygwin."
+else
+    echo "Unrecognized OS, may not build properly."
+fi
+
+# Clean build dir
+rm -rf build
+
+# Set JAVA_HOME
+echo "Please input your JAVA_HOME path (for example, /usr/lib/jvm/java-1.8.0-openjdk-amd64):"
+read javahome
+JAVA_HOME=$javahome
+export JAVA_HOME
+echo "JAVA_HOME set to" $JAVA_HOME
+
+# Download waf builder
 if ls waf-1.8.12 1> /dev/null 2>&1; then
     echo "waf builder already downloaded"
 else
     echo "downloading waf builder"
     wget --no-check-certificate https://waf.io/waf-1.8.12
 fi
+
+# Build kodkod and solvers with waf
 chmod u+x waf-1.8.12
+echo "BUILDING..."
+echo ""
+echo ""
 ./waf-1.8.12 configure --prefix=. --libdir=lib build install
