@@ -24,7 +24,8 @@ hs_err_pid*
 # build directories
 build
 bin
-lib/*
+lib/*.so
+lib/plingeling
 .*waf*
 waf-1.8.12
 jni/*

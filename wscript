@@ -18,6 +18,10 @@ def build(bld):
     bld(rule = 'unzip ${SRC} -x *src.jar',
         source = 'sat4j-core-v20130525.zip',
         target = 'org.sat4j.core.jar')
+    bld(rule = 'wget -O junit.jar "http://search.maven.org/remotecontent?filepath=junit/junit/4.12/junit-4.12.jar"',
+        target = 'junit.jar')
+    bld(rule = 'wget -O hamcrest-core.jar "http://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"',
+        target = 'hamcrest-core.jar')
     bld.add_group()
 
     bld(features  = 'javac jar',
@@ -29,19 +33,6 @@ def build(bld):
         manifest  = 'kodkod/MANIFEST',
         basedir   = 'kodkod',
         destfile  = 'kodkod.jar')
-
- #   bld(features  = 'javac jar',
- #       name      = 'examples',
- #       use       = 'kodkod',
- #       srcdir    = 'examples',
- #       outdir    = 'examples',
- #       compat    = '1.8',
- #       classpath = ['.', 'kodkod.jar'],
- #       manifest  = 'examples/MANIFEST',
- #       basedir   = 'examples',
- #       destfile  = 'examples.jar')
-
-    bld.install_files('${LIBDIR}', ['kodkod.jar'])
 
 def distclean(ctx):
     from waflib import Scripting
@@ -62,6 +53,17 @@ def test(bld):
         target = 'hamcrest-core.jar')
     bld.add_group()
 
+    bld(features  = 'javac jar',
+        name      = 'examples',
+        use       = 'kodkod',
+        srcdir    = 'examples',
+        outdir    = 'examples',
+        compat    = '1.8',
+        classpath = ['.', 'kodkod.jar'],
+        manifest  = 'examples/MANIFEST',
+        basedir   = 'examples',
+        destfile  = 'examples.jar')
+
     cp = ['.', 'kodkod.jar', 'examples.jar', 'org.sat4j.core.jar', 'junit.jar', 'hamcrest-core.jar']
     bld(features  = 'javac',
         name      = 'test',
@@ -75,4 +77,3 @@ def test(bld):
                                                                                           junit = 'org.junit.runner.JUnitCore',
                                                                                           test = 'kodkod.test.AllTests'),
         always = True)
-

@@ -20,16 +20,16 @@ function error { echo -e "$(tput setaf 9; tput bold)  [ERROR]: $@$(tput sgr0)"; 
 function trace { echo -e "$(tput setaf 7)$@$(tput sgr0)"; }
 function fatal { error $@; fade_end; exit 1; }
 function compile {
+    # set version
     version_file=src/edu/mit/csail/sdg/alloy4/Version.java
     cp -r $version_file $version_file.bak
     sed -i \
-      -e 's/public static String buildDate.*/public static String buildDate() { return "'"$BUILD_DATE"'"; }/' \
       -e 's/public static String version.*/public static String version() { return "'"$VERSION"'"; }/' $version_file
     mkdir -p bin
     info "cleaning up the bin folder"
     rm -rf bin/*
     step "compiling"
-    CP=$(ls -1 lib/*.jar | xargs | sed 's/\ /'$CP_SEP'/g')
+    CP=$(ls -1 lib/*.jar build/*.jar | xargs | sed 's/\ /'$CP_SEP'/g')
     trace "  using CLASSPATH: $CP"
     find src -name "*.java" | xargs javac -cp $CP -d bin
     ok="$?"
@@ -43,10 +43,15 @@ function dist {
     rm -rf $DST/*
     mkdir -p $DST/alloy
     step "building JAR distribution"
-    for f in lib/*jar
+    for f in build/*.jar
     do
         trace "  extracting: $f"
 	unzip -q -o $f -d $DST/alloy
+    done
+    for f in lib/*.jar
+    do
+        trace "  extracting: $f"
+        unzip -q -o $f -d $DST/alloy
     done
     # copy the content of the extra folder
     cp -r extra/* $DST/alloy

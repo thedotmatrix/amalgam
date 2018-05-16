@@ -15,9 +15,6 @@ else
     echo "Unrecognized OS, may not build properly."
 fi
 
-# Clean build dir
-rm -rf build
-
 # Set JAVA_HOME
 echo "Please input your JAVA_HOME path (for example, /usr/lib/jvm/java-1.8.0-openjdk-amd64):"
 read javahome
@@ -38,4 +35,6 @@ chmod u+x waf-1.8.12
 echo "BUILDING..."
 echo ""
 echo ""
+rm -f build/*.zip
 ./waf-1.8.12 configure --prefix=. --libdir=lib build install
+#./waf-1.8.12 configure --prefix=. --libdir=lib test install
