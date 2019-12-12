@@ -357,8 +357,16 @@ public class AmalgamNaiveEvaluator extends VisitReturn<Object> {
             case GT:
                 l = AmalgamEvalVisitor.extractIntFromTupleSet(x.left.accept(this));
                 r = AmalgamEvalVisitor.extractIntFromTupleSet(x.right.accept(this));
-                return cacheAndMaybeSanityCheck(x, l > r);    
-                        
+                return cacheAndMaybeSanityCheck(x, l > r);
+            case IPLUS:
+                l = AmalgamEvalVisitor.extractIntFromTupleSet(x.left.accept(this));
+                r = AmalgamEvalVisitor.extractIntFromTupleSet(x.right.accept(this));
+                return cacheAndMaybeSanityCheck(x, l + r);
+            case IMINUS:   
+                l = AmalgamEvalVisitor.extractIntFromTupleSet(x.left.accept(this));
+                r = AmalgamEvalVisitor.extractIntFromTupleSet(x.right.accept(this));
+                return cacheAndMaybeSanityCheck(x, l - r);
+
             default:
                 return err(x);
         }
