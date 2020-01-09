@@ -34,7 +34,7 @@ public final class Version {
    public static int buildNumber() { return Integer.MAX_VALUE; }
 
    /** Returns the version string. */
-   public static String version() { return "4.2_2018-05-11"; }
+   public static String version() { return "4.2_2019-12-27"; }
 
    /** Returns the build date. */
    public static String buildDate() { return "2018-05-11 16:11 EDT"; }

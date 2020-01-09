@@ -177,6 +177,28 @@ import edu.mit.csail.sdg.alloy4whole.SimpleReporter.SimpleTask1;
 import edu.mit.csail.sdg.alloy4whole.SimpleReporter.SimpleTask2;
 import kodkod.engine.fol2sat.HigherOrderDeclException;
 
+import static edu.mit.csail.sdg.alloy4.A4Preferences.AntiAlias;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.AutoVisualize;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.CoreGranularity;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.CoreMinimization;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.FontName;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.FontSize;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.ImplicitThis;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.InferPartialInstance;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.LAF;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.NoOverflow;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.RecordKodkod;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.SkolemDepth;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.Solver;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.SubMemory;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.SubStack;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.SyntaxDisabled;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.TabSize;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.Unrolls;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.VerbosityPref;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.WarningNonfatal;
+import static edu.mit.csail.sdg.alloy4.A4Preferences.Welcome;
+
 /** Simple graphical interface for accessing various features of the analyzer.
  *
  * <p> Except noted below, methods in this class can only be called by the AWT event thread.
@@ -1019,14 +1041,14 @@ public final class SimpleGUI implements ComponentListener, Listener {
         A4Options opt = new A4Options();
         opt.tempDirectory = alloyHome() + fs + "tmp";
         opt.solverDirectory = alloyHome() + fs + "binary";
-        opt.recordKodkod = true;            //RecordKodkod.get();
-        opt.noOverflow = true;              //NoOverflow.get();
-        opt.unrolls = -1;                   //Unrolls.get();
-        opt.skolemDepth = -1;               //SkolemDepth.get();
+        opt.recordKodkod = true;            RecordKodkod.get();
+        opt.noOverflow = true;              NoOverflow.get();
+        opt.unrolls = -1;                   Unrolls.get();
+        opt.skolemDepth = -1;               SkolemDepth.get();
         opt.symmetry = 0;                   //SBLevel.get();
-        opt.coreMinimization = 2;           //CoreMinimization.get();
-        opt.inferPartialInstance = false;   //InferPartialInstance.get();
-        opt.coreGranularity = 0;            //CoreGranularity.get();
+        opt.coreMinimization = 2;           CoreMinimization.get();
+        opt.inferPartialInstance = false;   InferPartialInstance.get();
+        opt.coreGranularity = 0;            CoreGranularity.get();
         opt.solver = Solver.get();
         opt.strategy = A4Preferences.ModelStrategy.get();
         opt.originalFilename = Util.canon(text.get().getFilename());
@@ -1215,7 +1237,7 @@ public final class SimpleGUI implements ComponentListener, Listener {
             addToMenu(optmenu, FontSize);
             menuItem(optmenu, "Font: "+FontName.get()+"...", doOptFontname());
             addToMenu(optmenu, TabSize);
-            /* DISABLE options 
+
             addToMenu(optmenu, Welcome);
 
             optmenu.addSeparator();
@@ -1237,8 +1259,8 @@ public final class SimpleGUI implements ComponentListener, Listener {
 
             addToMenu(optmenu, Solver);
             addToMenu(optmenu, SkolemDepth);
-            JMenu cmMenu = addToMenu(optmenu, CoreMinimization); cmMenu.setEnabled(Solver.get() == SatSolver.MiniSatProverJNI);
-            JMenu cgMenu = addToMenu(optmenu, CoreGranularity); cgMenu.setEnabled(Solver.get() == SatSolver.MiniSatProverJNI);
+            JMenu cmMenu = addToMenu(optmenu, CoreMinimization);// cmMenu.setEnabled(Solver.get() == SatSolver.MiniSatProverJNI);
+            JMenu cgMenu = addToMenu(optmenu, CoreGranularity);// cgMenu.setEnabled(Solver.get() == SatSolver.MiniSatProverJNI);
 
             addToMenu(optmenu, AutoVisualize, RecordKodkod);
 
@@ -1247,10 +1269,10 @@ public final class SimpleGUI implements ComponentListener, Listener {
                 addToMenu(optmenu, ImplicitThis, NoOverflow, InferPartialInstance);
             }
 
-            addToMenu(optmenu, ProvStyle);
-            addToMenu(optmenu, SBLevel);
-            addToMenu(optmenu, LiteralProv);
-            */
+            //addToMenu(optmenu, ProvStyle);
+            //addToMenu(optmenu, SBLevel);
+            //addToMenu(optmenu, LiteralProv);
+            
             addToMenu(optmenu, A4Preferences.ModelStrategy);
 
         } finally {
