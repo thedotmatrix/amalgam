@@ -1,4 +1,7 @@
 # Amalgam
+This project will not be updated for Alloy5.
+If you have any questions about this project or related research, please contact:
+[Tim Nelson](https://github.com/tnelson)
 
 ## Build Instructions (bash scripts or equivalent OS shell commands)
 - **KodKod/SATSolvers:** 
